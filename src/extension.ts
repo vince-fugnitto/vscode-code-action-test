@@ -53,6 +53,7 @@ export class Emojizer implements vscode.CodeActionProvider {
 		replaceWithSmileyFix.isPreferred = true;
 
 		const replaceWithSmileyHankyFix = this.createFix(document, range, '💩');
+		replaceWithSmileyHankyFix.isPreferred = true;
 
 		const commandAction = this.createCommand();
 
